@@ -1,0 +1,100 @@
+
+<html>
+<head>
+    <title>sales</title>
+    <style>
+        body {
+            background-color: #f2f2f2;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        p {
+            font-family: verdana;
+            font-size: 20px;
+        }
+
+        form {
+            border: 3px solid #f1f1f1;
+        }
+
+        input[type=text], input[type=password] {
+            width: 31%;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 10%;
+        }
+
+            button:hover {
+                opacity: 0.8;
+            }
+
+        .cancelbtn {
+            width: auto;
+            padding: 10px 18px;
+            background-color: #f44336;
+        }
+
+        .imgcontainer {
+            text-align: center;
+            margin: 24px 0 12px 0;
+        }
+
+        img.avatar {
+            width: 10%;
+            border-radius: 50%;
+        }
+
+        .container {
+            padding: 9px;
+        }
+
+        span.psw {
+            float: right;
+            padding-top: 16px;
+        }
+
+ 
+    </style>
+
+</head>
+
+<body>
+    <center>
+        <h1>sales</h1>
+        <form action="/salesSave" method="post">
+            <div class="container">
+                <label><b>product</b></label><br />
+                <input type="text" placeholder="Enter product" name="product" required><br />
+
+                <label><b>price</b></label><br /><br />
+                <input type="text" placeholder="Enter price" name="price" required><br />
+
+                <label><b>quantity</b></label><br /><br />
+                <input type="text" placeholder="Enter quantity" name="quantity" required><br />
+
+                <label><b>total</b></label><br /><br />
+                <input type="text" placeholder="Enter total" name="total" required><br />
+
+                <label><b>date</b></label><br /><br />
+                <input type="text" placeholder="Enter date" name="date" required><br />
+
+                <button type="submit">Submit</button>
+            </div>
+
+            <div class="container" style="background-color:#f1f1f1">
+                <button type="button" class="cancelbtn">Cancel</button>
+            </div>
+        </form>
+    </center>
+</body>
+</html>

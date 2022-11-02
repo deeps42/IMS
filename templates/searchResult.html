@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Result</title>
+</head>
+<body>
+    <center>
+        <h1>Search Result</h1>
+        <table border="1">
+            <tr>
+                <th>Fullname</th>
+                <th>Address</th>
+                <th>City</th>
+                <th>State</th>
+                <th>Zip</th>
+                <th>Country</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Username</th>
+
+            </tr>
+            {% for user in userDetails %}
+            <tr>
+                <td>{{user[1]}}</td>
+                <td>{{user[2]}}</td>
+                <td>{{user[3]}}</td>
+                <td>{{user[4]}}</td>
+                <td>{{user[5]}}</td>
+                <td>{{user[6]}}</td>
+                <td>{{user[7]}}</td>
+                <td>{{user[8]}}</td>
+                <td>{{user[9]}}</td>
+
+            </tr>
+            {% endfor %}
+        </table>
+        <a href="{{ url_for('home') }}">Home</a>
+    </center>
+</body>
+</html>
+
+
+
+
+
